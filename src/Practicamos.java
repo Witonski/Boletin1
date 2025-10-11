@@ -4,28 +4,21 @@ public class Practicamos {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int numero;
-        int suma = 0;
 
-        System.out.println("Solicita un número entero positivo: ");
-        numero = sc.nextInt();
 
-        while (numero < 0){
-            System.out.println("Solicita un número entero positivo: ");
-            numero = sc.nextInt();
+        System.out.println("Introduce un número entero positivo o cero: ");
+        int num = sc.nextInt();
+
+        while (num < 0){
+            System.out.println("Introduce un número entero positivo o cero: ");
+            num = sc.nextInt();
         }
+        int factorial = 1;
 
-        for (int i = 1; i < numero; i++){
-            if (numero % i == 0){
-                suma += i;
-            }
+        for (int i = 1; i <= num; i++){
+            factorial = factorial * i;
 
         }
-        if (suma == numero){
-            System.out.println("El número " +numero+ " es perfecto ");
-        }else {
-            System.out.println("El número " + numero + " no es perfecto");
-        }
-
+        System.out.println("El factorial del número " + num + " es " + factorial);
     }
 }
