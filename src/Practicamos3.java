@@ -43,7 +43,7 @@ public class Practicamos3 {
      */
     private static void mostrarAyuda() {
         System.out.println("\n--- COMANDOS DISPONIBLES ---");
-        System.out.println("ayuda: Muestra esta lista de comandos.");
+        System.out.println("ayuda: Muestra esta lista de comandos.\n");
         System.out.println("mirar: Describe tu ubicación actual y los objetos visibles.");
         System.out.println("inventario: Muestra los objetos que llevas contigo.");
         System.out.println("ir derecha: Intenta moverse a la habitación de la derecha.");
