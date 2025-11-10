@@ -8,7 +8,7 @@ public class BucleFor {
        for (int i = 1; i < 11; i= i+1){
            suma = suma + i;
 
-           System.out.println("La suma del número " + i + " es " + suma);
+           System.out.println("La suma de los números del 1 al 10 es " + suma);
        }
 
 

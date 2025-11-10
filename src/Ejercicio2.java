@@ -1,27 +1,31 @@
-import java.util.Scanner;
-
-public class Ejercicio2 {
-    public static void main(String[] args) {
-
 /* 2. Realizar un programa que lea un número entero entre 0 y 10
 y visualice su tabla de multiplicar. Por ejemplo si el numero es 7
 debe aparecer Tabla del 7 7*0=0 7*1=7 ….. 7*10=70*/
 
-        Scanner scanner = new Scanner(System.in);
+import java.util.Scanner;
 
-        System.out.println("Introduce un numero: ");
-        int numero = scanner.nextInt();
+public class Ejercicio2 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int numEnt;
 
-        if (numero >=0 && numero <=10){
-            System.out.println("Tabla del " + numero);
+        do {
+            System.out.println("Introduce un número entero **del 0 al 10**:");
+            numEnt = entrada.nextInt();
 
-            for (int i = 0; i <= 10; i++) {
-                System.out.println(numero + " * " + i + " = " + (numero * i));
 
+            if (numEnt < 0 || numEnt > 10) {
+                System.out.println("Número inválido. Inténtalo de nuevo.");
             }
 
-        }else {
-            System.out.println("El número debe estar entre 0 y 10");
+        } while (numEnt < 0 || numEnt > 10);
+
+        System.out.println("\n*** Tabla del " + numEnt + " ***");
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(numEnt + " * " + i + " = " + (numEnt * i));
         }
+
+        entrada.close();
     }
 }

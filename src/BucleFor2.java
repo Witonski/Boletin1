@@ -8,9 +8,9 @@ public class BucleFor2 {
         for (int i = 1; i < 100; i = i + 2){
             suma += i;
 
-            System.out.println("La suma del número impar " + i + " es: " + suma);
         }
 
+        System.out.println("La suma de los números impares del 1 al 99 es: " + suma);
 
     }
 }
